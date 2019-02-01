@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base Converter</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+    <script src="baseConverter.js"></script>
+</head>
+<body>
+<h1 align="center">Base Converter</h1>
+<div class="topnav w3-container w3-black w3-center w3-allerta" align= "center">
+    <a class="Home" href="index.html">Home</a>
+    <a href="Earlylife.html">Early</a>
+    <a href="Family.html">Family</a>
+    <a href="miniProject.html">Mini Projects</a>
+    <a href="baseConverter.html">Base Converter</a>
+    <a href="calc.html">Calculator</a>
+</div>
+</body>
+<body>
+<form name="project1">
+    <h1>Project 1</h1>
+    <h3>Binary to Base10</h3>
+    <br><br>
+    Please enter a number in base 2: <input type="text" id="binaryNum">
+    <br><br>
+    Please enter the base for your number(2): <input type="text" id="base">
+    <br><br>
+    <button type="button" onclick="document.project1.result.value=smallToTen()">To Base 10</button>
+    <br><br>
+    <input name="result" readonly="true" placeholder="new number...">
+</form>
+
+<form name="project2">
+    <h1>Project 2</h1>
+    <h3>Base 10 to Any Base</h3>
+    <br><br>
+    Please enter a base 10 number: <input type="text" id="num1">
+    <br><br>
+    Please enter any base you want the number to be converted to: <input type="text" id="base1">
+    <br><br>
+    <button type="button" onclick="document.project2.result.value=tenToSmall()">From Base 10</button>
+    <br><br>
+    <input name="result" readonly="true" placeholder="new number...">
+</form>
+
+<form name="project3">
+    <h1>Project 3</h1>
+    <h3>Any Base to Any Base!</h3>
+    <br><br>
+    Please enter a number you want to convert: <input type="text" id="num">
+    <br>
+    Please enter the base for the number you typed: <input type="text" id="baseOfNum">
+    <br>
+    Please enter a base that you want the number to be converted to: <input type="text" id="newBase">
+    <br><br>
+    <button type="button" onclick="document.project3.result.value=baseToBase()">Base To Base</button>
+    <br><br>
+    <input name="result" readonly="true" placeholder="new number...">
+</form>
+</body>
+</html>

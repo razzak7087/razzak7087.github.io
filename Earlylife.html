@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Early Life</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+</head>
+<body>
+<h1 align="center">Early Life</h1>
+<div class="topnav w3-container w3-black w3-center w3-allerta" align= "center">
+    <a class="Home" href="index.html">Home</a>
+    <a href="Earlylife.html">Early</a>
+    <a href="Family.html">Family</a>
+    <a href="miniProject.html">Mini Projects</a>
+    <a href="baseConverter.html">Base Converter</a>
+    <a href="calc.html">Calculator</a>
+</div>
+</body>
+</html>
+<br><br><br>
+<h1> The Best Years of the Razzaks' Life</h1>
+    <!-- Slideshow container...got this code from w3schools-->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="img/hospital.jpeg" height="665" width="1000"/>
+            <div class="text">I was born in Swedish Covenant Hospital in Chicago</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="img/fakeme.jpeg.jpeg" height="665" width="1000"/>
+            <div class="text">I was born on March 17,2003</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="img/three.jpeg.jpeg" height="665" width="1000"/>
+            <div class="text">I have three older brothers</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="img/me.jpeg.jpeg" height="665" width="1000"/>
+            <div class="text">But we all know I'm the favorite :)))</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="img/family.png" height="665" width="1000"/>
+            <div class="text"><3</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .prev, .next,.text {font-size: 11px}
+        }
+    </style>
+    <body>
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+    </body>
+<!--end of slideshow code-->
+<h1> Education</h1>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+</head>
+<body>
+<!--got this upcoming code from w3schools-->
+
+<div class="row"
+    <div class="column">
+        <img src="img/muir1.jpeg" height="490" width="700" alt="muir" style="width:100%" border="5">
+    <p>From preschool to 6th grade, I went to John Muir Literacy Academy and loved every single day. </p> </div>
+
+    <div class="column">
+        <img src="img/CPSA.jpeg" height="490" width="650" float="right" style="width:100%" border="5"/>
+    <p>Except for 4th grade, where I went to a private school called CPSA.</p></div>
+
+    <div class="column">
+    <td colspan="4">
+        <img src="img/realgrad.jpeg.jpg" height="490" width="500" float="left" style="width:100%" border="5"/>
+    </td>
+        <p> I went to Eisenhower Junior High School.</p></div>
+    <div class="column">
+        <img src="img/shuchi.jpeg.JPG" height="490" width="500" float="right" style="width:100%" border="5"/>
+        <p>I currently go to Hoffman Estates High School.</p>
+        <p><a href="https://adc.d211.org/Domain/12"><b>If you want to more about HEHS, click here.</p>
+    </div>
+</body>
+<!--got this w3schools-->
+
+    <br><br>
+    <html>
+    <head>
+        <style>
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+    td, th {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    }
+
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+        </style>
+    </head>
+    <body>
+
+
+    <h2>A-Day Schedule</h2>
+
+    <table>
+        <tr>
+            <td>Business Explorations</td>
+            <td>Canace, Daniel M.</td>
+            <td>Rm 160</td>
+        </tr>
+        <tr>
+            <td>PE 2 Weight Training</td>
+            <td>Grabarek, David M</td>
+            <td>Rm GYM</td>
+        </tr>
+        <tr>
+            <td>Spanish 3</td>
+            <td>Henning, Ann</td>
+            <td>Rm 064</td>
+        </tr>
+        <tr>
+            <td>English 2</td>
+            <td>Macnider, Kirk</td>
+            <td>Rm 269</td>
+        </tr>
+    </table>
+    <html>
+    <head>
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+            td, th {
+                border: 2px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>
+    <h2>B-Day Schedule </h2>
+
+    <table>
+        <tr>
+            <td>Algebra 2/Pre-Calc</td>
+            <td>Olson-Brady, Krista K</td>
+            <td>Rm 214</td>
+        </tr>
+        <tr>
+            <td>Accelerated Chemistry</td>
+            <td>Katovich, Tanya M</td>
+            <td>Rm 252</td>
+        </tr>
+        <tr>
+            <td>AP Computer Sci. Princ.</td>
+            <td>Krzankowski, Philip D</td>
+            <td>Rm 260</td>
+        </tr>
+        <tr>
+            <td>Seminar</td>
+            <td>Ahmed, Naz</td>
+            <td>Rm CAFE</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+    <br><br>
