@@ -54,6 +54,6 @@ pic1.src = "img/blackbird.png";
 function drawImage()
 {
     var ctx = document.getElementById("myCanvas").getContext("2d");
-    ctx.drawImage(pic1,190,50,350,70); //picture, x-coord, y-coord, height, width
+    ctx.drawImage(pic1,190,50,350,90); //picture, x-coord, y-coord, height, width
 }
 
