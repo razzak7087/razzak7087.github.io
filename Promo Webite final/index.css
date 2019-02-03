@@ -1,0 +1,61 @@
+/*getting this citation from w3schools*/
+/* Add a black background color to the top navigation */
+.w3-allerta {
+    font-family: "Allerta Stencil", Sans-serifans-serif;
+}
+
+.topnav {
+    background-color: #4058af;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: inherit;
+    color: #f2f2f2;
+    text-align: center;
+    line-height: 75px;
+    padding: 120px 120px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: #4058af;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #51af7c;
+    color: white;}
+/* got this font code from w3schools */
+
+body
+{
+    background: url("img/aesthetic.jpeg") no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+/*got this code from Eric*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h1
+{
+    font-family: "Allerta Stencil", Sans-serifans-serif;
+    text-align: center;
+}
+h2
+{
+    text-align: center;
+}
+p
+{
+    text-align: center;
+}

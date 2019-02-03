@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Friends Trivia</title>
+    <script src="quiz.js"></script>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+
+</head>
+<body>
+<h1 align="center">Ultimate Friends Quiz</h1>
+<div class="topnav w3-container w3-black w3-center w3-allerta" align= "center">
+        <a href="index.html">Home</a>
+        <a href="Earlylife.html">Early</a>
+        <a href="Family.html">Family</a>
+        <a href="miniProject.html">Mini Projects</a>
+        <a href="baseConverter.html">Base Converter</a>
+        <a href="calc.html">Calculator</a>
+</div>
+<form name="myQuiz">
+
+
+    Question 1: What color is the ottoman in Monica's apartment?<br>
+    <input type="radio" name="a1" value="Red">Red<br>
+    <input type="radio" name="a1" value="Blue">Blue<br>
+    <input type="radio" name="a1" value="Purple">Purple<br>
+    <input type="radio" name="a1" value="Green">Green<br>
+
+    <br><br>
+    Question 2: What is the name of Ross's pet monkey?
+    <input type="text" name="a2">
+    <br><br>
+
+    Question 3: Which of the following is Ross allergic to?<br>
+    <input type="checkbox" name="a3A" value="Lobster">Lobster<br>
+    <input type="checkbox" name="a3B" value="Dust">Dust<br>
+    <input type="checkbox" name="a3C" value="Kiwi">Kiwi<br>
+    <input type="checkbox" name="a3D" value="Peanuts">Peanuts<br>
+    <input type="checkbox" name="a3E" value="Lime">Lime<br>
+    <br><br>
+
+    Question 4: How many roses did Ross send to Emily?<br>
+    <input type="radio" name="a4" value="72">72<br>
+    <input type="radio" name="a4" value="71">71<br>
+    <input type="radio" name="a4" value="73">73<br>
+    <input type="radio" name="a4" value="75">75<br>
+    <br><br>
+
+    Question 5: What is the name of Joey's Cabbage Patch Kid?<br>
+    <input type="radio" name="a5" value="AD">Aisha Dancia<br>
+    <input type="radio" name="a5" value="AL">Adeline Linda<br>
+    <input type="radio" name="a5" value="AC">Alaina Collet<br>
+    <input type="radio" name="a5" value="AM">Alicia May Emory<br>
+    <br><br>
+
+    Question 6: What is the name of Emma's nanny?
+    <input type="text" name="a6">
+    <br><br>
+
+    Question 7: What is the name of Richard Burke's two children?<br>
+    <input type="checkbox" name="a7A" value="Melissa">Melissa<br>
+    <input type="checkbox" name="a7B" value="Timothy">Timothy<br>
+    <input type="checkbox" name="a7C" value="Kathy">Kathy<br>
+    <input type="checkbox" name="a7D" value="Michelle">Michelle<br>
+    <input type="checkbox" name="a7E" value="Paul">Paul<br>
+
+    <br><br>
+
+    <button type="button" onclick="checkAnswers()" ><b>ANSWERS</b></button>
+    <p id="score"></p>
+    <p id="answer"></p>
+
+</form>
+</body>
+</html>

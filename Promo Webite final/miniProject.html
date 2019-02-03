@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Mini-Projects</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+    <script src="miniProject.js"></script>
+</head>
+<body>
+<h1 align="center">Mini Projects</h1>
+<div class="topnav w3-container w3-black w3-center w3-allerta" align= "center">
+    <a class="Home" href="index.html">Home</a>
+    <a href="Earlylife.html">Early</a>
+    <a href="Family.html">Family</a>
+    <a href="miniProject.html">Mini Projects</a>
+    <a href="baseConverter.html">Base Converter</a>
+    <a href="calc.html">Calculator</a>
+    <a href="canvas.html">Canvas</a>
+</div>
+</body>
+</html>
+
+<!--Mad Libs Project-->
+<h1>MAD LIBS</h1>
+<h2>Follow the instructions below to create your own story!</h2>
+Type of Disease: <input type="text" id="input1">
+<br><br>
+Noun: <input type="text" id="input2">
+<br><br>
+Part of Body: <input type="text" id="input3">
+<br><br>
+Adjective: <input type="text" id="input4">
+<br><br>
+A Person You Know: <input type="text" id="input5">
+<br><br>
+Plural Noun #1: <input type="text" id="input6">
+<br><br>
+Plural Noun #2: <input type="text" id="input7">
+<br><br>
+Negative Adjective: <input type="text" id="input8">
+<br><br>
+Plural Noun #3: <input type="text" id="input9">
+<br><br>
+Exclamation: <input type="text" id="input10">
+<br><br>
+Plural Noun #4: <input type="text" id="input11">
+<br><br>
+<button type="button" onclick="madLib()">See Results</button>
+<p id="generate">
+
+</p>
+<!--Temperature Bug Project-->
+<img id="weather" src="" height="75">
+<form name="project1">
+<form name="conditional">
+    <h1>Temperature Bug</h1>
+    <br><br>
+    Please type a numeric code that represents a temperature in degrees fahrenheit <input type="text" name="f1">
+    <br>
+    <button type="button" onclick="document.project1.result.value=temperatureBug()">Season</button>
+    <br><br>
+    <input type="text" readonly="true" name="result" style="border-style: double" placeholder="the season is..." size="50">
+</form>
+</form>
+<!--Calorie Counter Project-->
+<form name="project2">
+    <h1>Calorie Counter</h1>
+    <br><br>
+    <select id="activities">
+        <option value="running">Running</option>
+        <option value="skating">Skating</option>
+        <option value="vacuuming">Vacuuming</option>
+        <option value="biking">Biking</option>
+        <option value="trampolining">Trampolining</option>
+    </select>
+    <button type="button" onclick="document.project2.activity.value= dropDown()">CLICK</button>
+    <input type="text" name="activity" readonly="true">
+    <br>
+    Type in the time (in minutes) spent on the activity:
+    <input type="text" name="input1">
+    <br><br>
+    <button type="button" onclick="document.project2.calories.value=calorieCounter ()">CONVERT</button>
+    You burned <input type="text" name="calories">
+</form>
+<br><br>
+
+
+
+<!--Assign Grade Project-->
+<form name="project3">
+    <h1>Assign Grade</h1>
+    <br><br>
+    Please type a numeric code to convert: <input type="text" name="num1">
+    <br>
+    <button type="button" onclick="document.project3.result.value=assignGrade()">Convert!</button>
+    <br><br>
+    <input type="text" readonly="true" name="result" style="border-style: double">
+</form>
+
+</body>
+</html>
