@@ -4,7 +4,6 @@ function drawSunset()
     drawRectangle();
     drawSun();
     drawImage();
-    movePic();
 }
 
 function drawRectangle()
