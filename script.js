@@ -4,6 +4,7 @@ function drawSunset()
     drawRectangle();
     drawSun();
     drawImage();
+    movePic();
 }
 
 function drawRectangle()
@@ -55,5 +56,15 @@ function drawImage()
 {
     var ctx = document.getElementById("myCanvas").getContext("2d");
     ctx.drawImage(pic1,190,50,350,90); //picture, x-coord, y-coord, height, width
+}
+function movePic()
+{
+    var ctx = document.getElementById("myCanvas").getContext("2d");
+    picX = picX + moveX;
+    picY = picY + moveY;
+    pic2X = pic2X + move2X;
+    pic2Y = pic2Y + move2Y;
+    ctx.drawImage(pic1, picX, picY, picW, picH);
+    ctx.drawImage(pic2, pic2X, pic2Y, pic2W, pic2H);
 }
 
