@@ -1,9 +1,9 @@
 function drawSunset()
 {
-
+    //requestAnimationFrame(animate);
     drawRectangle();
     drawSun();
-    drawImage();
+    movePicture();
 }
 
 function drawRectangle()
@@ -51,10 +51,13 @@ function drawSun()
 var pic1 = new Image(); //create a new image OBJECT and attach it to a ref variable
 pic1.src = "img/blackbird.png";
 
-function drawImage()
-{
+
+var rectX = 50;
+moveAmount = 4;
+
+function movePicture() {
     var ctx = document.getElementById("myCanvas").getContext("2d");
-    ctx.drawImage(pic1,190,50,350,90); //picture, x-coord, y-coord, height, width
+    rectX = rectX + moveAmount; //move 4 pixels every refresh
+    ctx.fillStyle = "#baacf2";
+    ctx.drawImage(pic1,rectX,50,350,90); //picture, x-coord, y-coord, height, width
 }
-
-
